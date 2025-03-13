@@ -1,7 +1,13 @@
-#include <cstdio>
-#include <cstdlib>
-#include <ctime>
 
+#include <ctime>
+#include <windows.h>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <cstdio>
+#include <cstring>
+#include <string>
 void limpiarPantalla() {
     system("cls");
 }
