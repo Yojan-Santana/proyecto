@@ -13,7 +13,7 @@ void mostrarTitulo(const char *titulo) {
 }
 
 void pausar() {
-    system("pause"); // Muestra "Presione una tecla para continuar..." y espera una tecla
+    system("pause"); 
 }
 
 int pago[10];
@@ -53,7 +53,7 @@ void realizar() {
     }
 
     if (i == 10) {
-        printf("¡Atención! No hay espacio para más pagos.\n");
+        printf("Â¡AtenciÃ³n! No hay espacio para mÃ¡s pagos.\n");
         pausar();
         return;
     }
@@ -103,7 +103,7 @@ void realizar() {
     vuelto[i] = pagado[i] - monto[i];
 
     registrado[i] = true;
-    printf("\n¡Pago registrado exitosamente!\n");
+    printf("\nÂ¡Pago registrado exitosamente!\n");
     pausar();
 }
 
@@ -121,7 +121,7 @@ void consultar() {
     }
 
     if (i == 10) {
-        printf("¡Error! Pago no registrado.\n");
+        printf("Â¡Error! Pago no registrado.\n");
         pausar();
         return;
     }
@@ -158,7 +158,7 @@ void modificar() {
     }
 
     if (i == 10) {
-        printf("¡Error! Pago no registrado.\n");
+        printf("Â¡Error! Pago no registrado.\n");
         pausar();
         return;
     }
@@ -215,7 +215,7 @@ void modificar() {
 
     vuelto[i] = pagado[i] - monto[i];
 
-    printf("\n¡Pago modificado exitosamente!\n");
+    printf("\nÂ¡Pago modificado exitosamente!\n");
     pausar();
 }
 
@@ -233,20 +233,20 @@ void eliminar() {
     }
 
     if (i == 10) {
-        printf("¡Error! Pago no registrado.\n");
+        printf("Â¡Error! Pago no registrado.\n");
         pausar();
         return;
     }
 
     char confirmar;
-    printf("¿Está seguro de eliminar el pago? (S/N): ");
+    printf("Â¿EstÃ¡ seguro de eliminar el pago? (S/N): ");
     scanf(" %c", &confirmar);
 
     if (confirmar == 'S' || confirmar == 's') {
         registrado[i] = false;
-        printf("\n¡Pago eliminado exitosamente!\n");
+        printf("\nÂ¡Pago eliminado exitosamente!\n");
     } else {
-        printf("\nEliminación cancelada.\n");
+        printf("\nEliminaciÃ³n cancelada.\n");
     }
 
     pausar();
